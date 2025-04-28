@@ -119,8 +119,13 @@ const Sell = () => {
   }, []);
 
   // Save items to localStorage whenever they change
+  // useEffect(() => {
+  //   localStorage.setItem("items", JSON.stringify(items));
+  // }, [items]);
   useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(items));
+    if (items.length > 0) { // Only save if there are items
+      localStorage.setItem("items", JSON.stringify(items));
+    }
   }, [items]);
 
   const handleSubmit = async (e: React.FormEvent) => {
