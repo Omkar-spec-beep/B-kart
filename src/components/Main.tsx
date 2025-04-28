@@ -1,49 +1,4 @@
 
-// import { useEffect, useState } from "react";
-// import Menubar from "./Menubar";
-// import Navbar from "./Navbar";
-// import Home from "./Home";
-// import Footer from "./Footer";
-// import { Link } from "react-router-dom";
-// import { fakeproduct } from "../data/fakeproduct"; // Make sure this path is correct
-
-// const Main = () => {
-//   const [prod, setProd] = useState([]);
-//   const [search, setSearch] = useState("");
-//   const [menu, setMenu] = useState("");
-
-//   const exchangeRate = 80; // Static rate: 1 USD = 80 INR
-
-//   useEffect(() => {
-//     // Convert prices to INR
-//     const convertedProducts = fakeproduct.map((item) => ({
-//       ...item,
-//       price: item.price * exchangeRate,
-//     }));
-//     setProd(convertedProducts);
-//   }, []);
-
-//   return (
-//     <div>
-//       <Navbar setSearch={setSearch} />
-//       <Menubar setMenu={setMenu} />
-
-//       <div className="flex justify-end px-4 py-2">
-//         <Link
-//           to="/sell"
-//           className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-//         >
-//           Sell
-//         </Link>
-//       </div>
-
-//       <Home products={prod} search={search} menu={menu} />
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default Main;
 
 import { useEffect, useState } from "react";
 import { Link, Routes, Route } from "react-router-dom";
