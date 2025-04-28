@@ -46,14 +46,14 @@ const Main = () => {
       <Navbar setSearch={setSearch} />
       <Menubar setMenu={setMenu} />
 
-      <div className="flex justify-end px-4 py-2">
+      {/* <div className="flex justify-end px-4 py-2">
         <Link
           to="/sell"
           className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
         >
           Sell
         </Link>
-      </div>
+      </div> */}
 
       <Routes>
         <Route path="/" element={<Home products={prod} search={search} menu={menu} />} />

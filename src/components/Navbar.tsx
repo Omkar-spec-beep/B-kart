@@ -46,7 +46,7 @@
 // export default Navbar
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import Bkart from "../assets/Bkart.png"
+import BWUKart from "../assets/BWUKart.png"
 import lens from "../assets/lens.png"
 import arrow from "../assets/arrow.png"
 import search from "../assets/search.png"
@@ -63,7 +63,7 @@ const HomeWithNavbar = (props: searchProp) => {
     <>
       {/* Navbar */}
       <div className="flex p-4 bg-slate-100 shadow-md">
-        <img src={Bkart} className="w-11 h-9" />
+        <img src={BWUKart} className="w-11 h-9" />
         <div className="flex border-2 w-64 p-2 border-black ml-5 bg-white">
           <img src={lens} className="w-6 h-5 mt-1" />
           <input placeholder="Location" className="ml-3 outline-none" />
@@ -87,9 +87,9 @@ const HomeWithNavbar = (props: searchProp) => {
         >
           <h1 className="font-bold text-lg">Login</h1>
         </div>
-        <div className="w-28 flex h-12 p-2 ml-6 cursor-pointer rounded-full border border-yellow-500">
+        {/* <div className="w-28 flex h-12 p-2 ml-6 cursor-pointer rounded-full border border-yellow-500">
           <h1 className="font-bold text-lg ml-3">+ SELL</h1>
-        </div>
+        </div> */}
       </div>
 
       {/* Login Popup */}
@@ -97,7 +97,7 @@ const HomeWithNavbar = (props: searchProp) => {
 
       {/* Hero Section */}
       <div className="bg-blue-100 text-center py-10">
-        <h1 className="text-3xl font-bold text-blue-700">Welcome to B-kart</h1>
+        <h1 className="text-3xl font-bold text-blue-700">Welcome to BWU-Kart</h1>
         <p className="text-gray-700 mt-2">Buy & Sell Study Gear Inside Your Campus</p>
         <Link
           to="/sell"
